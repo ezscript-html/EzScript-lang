@@ -41,6 +41,20 @@ for itm in arraycode:
         compiledlines.append("<body>")
     elif base == "endbody":
         compiledlines.append("</body>")
+    elif base == "javascript":
+        compiledlines.append("<script>")
+    elif base == "endjavascript":
+        compiledlines.append("</script>")
+    elif base == "div":
+        compiledlines.append("<div>")
+    elif base == "enddiv":
+        compiledlines.append("</div>")
+    elif base == "tb":
+        compiledlines.append("<hr>")
+    elif base == "lb":
+        compiledlines.append("<br>")
+    else:
+        compiledlines.append(itm)
 print("Compiled successfully")
 compiledtext = ""
 for item in compiledlines:
