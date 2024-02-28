@@ -1,57 +1,70 @@
 # ZenScript by Dumo178
+# EzScript by nmsderp
 import os
 
 compiledlines = []
 font = "Arial"
 zsreadpath = ""
 while not os.path.exists(zsreadpath):
-    zsreadpath = input("Enter a ZenScript file path>")
+    zsreadpath = input("Enter a EzScript file path>")
 with open(zsreadpath, "r") as file:
     file_content = file.read()
 arraycode = file_content.split("\n")
 for itm in arraycode:
     wordarr = itm.split(" ")
     base = wordarr[0]
-    if base == "title":
+    if base == "<title>":
         argument = " ".join(wordarr[1:])
         compiledlines.append(f"<title>{argument}</title>")
-    elif base == "heading":
+    elif base == "<heading>":
         argument = " ".join(wordarr[1:])
         compiledlines.append(f'<h1 style="font-family: {font};">{argument}</h1>')
-    elif base == "text":
+    elif base == "<text>":
         argument = " ".join(wordarr[1:])
         compiledlines.append(f'<p style="font-family: {font};">{argument}</p>')
-    elif base == "font":
+    elif base == "<font>":
         argument = " ".join(wordarr[1:])
         font = argument
-    elif base == "icon":
+    elif base == "<icons>":
         argument = " ".join(wordarr[1:])
         compiledlines.append(
             f'<link rel="icon" href="{argument}" type="image/x-icon"/>'
         )
-    elif base == "main":
+    elif base == "<main>":
         compiledlines.append("<html>")
-    elif base == "endmain":
+    elif base == "<endmain>":
         compiledlines.append("</html>")
-    elif base == "init":
+    elif base == "<init>":
         compiledlines.append("<head>")
     elif base == "endinit":
         compiledlines.append("</head>")
-    elif base == "body":
+    elif base == "<body>":
         compiledlines.append("<body>")
-    elif base == "endbody":
+    elif base == "<endbody>":
         compiledlines.append("</body>")
-    elif base == "javascript":
+    elif base == "<js>":
         compiledlines.append("<script>")
-    elif base == "endjavascript":
+    elif base == "<css>":
+        compiledlines.append("<style>")
+    elif base == "<endcss>":
+        compiledlines.append("</style>")
+    elif base == "<endjs>":
         compiledlines.append("</script>")
-    elif base == "div":
+    elif base == "<endetails>":
+        compiledlines.append("</details>")
+    elif base == "<details>":
+        compiledlines.append("<details>")
+    elif base == "<summary>":
+        compiledlines.append("<summary>")
+    elif base == "<endsummary>":
+        compiledlines.append("</summary>")
+    elif base == "<div>":
         compiledlines.append("<div>")
-    elif base == "enddiv":
+    elif base == "<enddiv>":
         compiledlines.append("</div>")
-    elif base == "tb":
+    elif base == "<tb>":
         compiledlines.append("<hr>")
-    elif base == "lb":
+    elif base == "<break>":
         compiledlines.append("<br>")
     else:
         compiledlines.append(itm)
