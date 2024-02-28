@@ -1,12 +1,12 @@
 # EzScript
 A programming language that compiles to HTML, written entirely in Python, meant to simplify website coding.  
-Heres an example of ezscript:  
+Heres an example of EzScript:  
 ```
 <title> cool ezscript website
 <heading> this is a heading
 <text> yo
 ```
-the code then compiles to html.
+Compiles into:
 
 ```
 <title>cool ezscript website</title>
