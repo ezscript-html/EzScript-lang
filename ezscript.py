@@ -1,5 +1,5 @@
 # ZenScript by Dumo178
-# EzScript by nmsderp
+# EzScript is a fork of ZenScript :D
 import os
 
 compiledlines = []
@@ -36,7 +36,7 @@ for itm in arraycode:
         compiledlines.append("</html>")
     elif base == "<init>":
         compiledlines.append("<head>")
-    elif base == "endinit":
+    elif base == "<endinit>":
         compiledlines.append("</head>")
     elif base == "<body>":
         compiledlines.append("<body>")

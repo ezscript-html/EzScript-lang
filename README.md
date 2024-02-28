@@ -1,14 +1,14 @@
 # ZenScript
-A "programming language" that compiles to HTML  
+A programming language that compiles to HTML, written entirely in Python, meant for simplicity
 Heres some syntax  
 ```
-title cool zenscript website
-heading Whats up
-text This is a website made in my "programming language"
+<title> cool ezscript website
+<heading> this is a heading
+<text> yo
 ```
 And it compiles to
 ```html
-<title>cool zenscript website</title>
-<h1 style="font-family: Arial;">Whats up</h1>
-<p style="font-family: Arial;">This is a website made in my "programming language"</p>
+<title>cool ezscript website</title>
+<h1 style="font-family: Arial;">this is a heading</h1>
+<p style="font-family: Arial;">yo</p>
 ```
