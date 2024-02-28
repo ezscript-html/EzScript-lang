@@ -1,4 +1,4 @@
-# ZenScript
+# EzScript
 A programming language that compiles to HTML, written entirely in Python, meant for simplicity
 Heres some syntax  
 ```
