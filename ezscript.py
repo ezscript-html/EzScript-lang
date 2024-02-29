@@ -44,11 +44,15 @@ for itm in arraycode:
         compiledlines.append("</body>")
     elif base == "<js>":
         compiledlines.append("<script>")
+    elif base == "<lua>":
+        compiledlines.append("<script type=\"application/lua\">")
+    elif base == "<initlua>":
+        compiledlines.append("<script src=\"https://nmsderp.is-a.dev/EzScript/scripts/fengari-web.js\"></script>")
     elif base == "<css>":
         compiledlines.append("<style>")
     elif base == "<endcss>":
         compiledlines.append("</style>")
-    elif base == "<endjs>":
+    elif base == "<endjs>" or base == "<endlua>":
         compiledlines.append("</script>")
     elif base == "<endetails>":
         compiledlines.append("</details>")
