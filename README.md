@@ -13,3 +13,14 @@ Compiles into:
 <h1 style="font-family: Arial;">this is a heading</h1>
 <p style="font-family: Arial;">yo</p>
 ```
+
+## You can even use Lua via [Fengari!](https://fengari.io/)
+```
+<initlua>
+<lua>
+function fengari(x)
+  print(x * 2)
+end
+fengari(4)
+<endlua>
+```
