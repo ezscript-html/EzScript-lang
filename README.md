@@ -1,5 +1,4 @@
-| :zap:        This software is under the BSL-1.0 license, however our parent project currently dosen't have a license   |
-|-----------------------------------------|
+## ⚡ This software is under the BSL-1.0 license, however our parent project currently dosen't have a license ⚡
 # EzScript
 A programming language that compiles to HTML, written entirely in Python, meant to simplify website coding.  
 Heres an example of EzScript:  
