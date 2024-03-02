@@ -1,0 +1,1 @@
+pyinstaller ezscript.py --onefile
