@@ -26,3 +26,5 @@ end
 fengari(4)
 <endlua>
 ```
+# Download
+Click [here](https://github.com/nmsderp/EzScript/releases) to view the releases of EzScript.
