@@ -1,11 +1,17 @@
 # ZenScript by Dumo178
 # EzScript is a fork of ZenScript :D
 import os
-
 def setup_directories():
     os.mkdir("ezproject")
     with open("ezproject/main.ez", "w") as file:
         file.write("<text>Hello, World!")
+    with open("ezproject/packages.json", "w") as file:
+        file.write('''
+{
+  "lockedpackage": "ezscript-core"
+}
+''')
+
 def compile_script():
     compiledlines = []
     font = "Arial"
