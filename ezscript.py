@@ -94,13 +94,16 @@ def main():
     print("Welcome to EzScript!")
     print("1. Setup directories (init)")
     print("2. Compile script")
-    choice = input("Enter your choice (1/2): ")
+    print("3. Install Package Into Dir [BETA DON'T USE YET]")
+    choice = input("Enter your choice (1/2/3): ")
 
     if choice == "1":
         setup_directories()
         print("Directories set up successfully.")
     elif choice == "2":
         compile_script()
+    elif choice == "3":
+        print("This hasn't been made yet, check back soon!")
     else:
         print("Invalid choice. Please enter '1' or '2'.")
 
