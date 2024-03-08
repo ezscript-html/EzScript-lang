@@ -28,10 +28,12 @@ jobs:
       - name: Get Version from version.txt 📃
         id: get_version
         run: echo "::set-output name=version::$(cat version.txt)"
+        if: success()
 
       - name: Create Release 👍
         id: create_release
         uses: actions/create-release@v1
+        if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
