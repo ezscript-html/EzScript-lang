@@ -2,6 +2,7 @@
 # EzScript is a fork of ZenScript :D
 import os
 def setup_directories():
+    print("WARNING: PACKAGES.JSON IS CURRENTLY USELESS")
     os.mkdir("ezproject")
     with open("ezproject/main.ez", "w") as file:
         file.write("<text>Hello, World!")
