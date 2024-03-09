@@ -66,7 +66,7 @@ def compile_script():
         elif base == "<initpy>":
             compiledlines.append('<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jspython-interpreter/dist/jspython-interpreter.min.js"></script>')
         elif base == "<py>":
-            compiledlines.append('<script>\nconst jsPython = window.jspython.jsPython</script>')
+            compiledlines.append('<script>\const jsPython = window.jspython.jsPython</script>')
         elif base == "<endjs>" or base == "<endlua>" or base == "<endpy>":
             compiledlines.append("</script>")
         elif base == "<endetails>":
