@@ -44,6 +44,9 @@ def compile_script():
             )
         elif base == "<main>":
             compiledlines.append("<html>")
+        # joke tag lol
+        elif base == "<troll>":
+            compiledlines.append('<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png" alt="National Troll" width="42" height="42" style="border:5px solid yellow">')
         elif base == "<endmain>":
             compiledlines.append("</html>")
         elif base == "<init>":
